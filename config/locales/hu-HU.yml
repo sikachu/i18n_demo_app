@@ -1,0 +1,145 @@
+"hu-HU":
+  date:
+    formats:
+      default: "%Y.%m.%d"
+      short: "%b. %e"
+      long: "%Y. %B %e."
+      only_day: "%e"
+
+    day_names: [vasárnap, hétfő, kedd, szerda, csütörtök, péntek, szombat]
+    abbr_day_names: [va, hé, ke, sze, csü, pé, szo]
+    month_names: [~, január, február, március, április, május, június, július, augusztus, szeptember, október, november, december]
+    abbr_month_names: [~, jan, febr, márc, ápr, máj, jún, júl, aug, szept, okt, nov, dec]
+    order: [ :year, :month, :day ]
+  
+  time:
+    formats:
+      default: "%a %b %d %H:%M:%S %Z %Y"
+      time: "%H:%M"
+      short: "%b. %d. %H:%M"
+      long: "%Y. %B %d. %H:%M"
+      only_second: "%S"
+      
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+          
+    am: 'de'
+    pm: 'du'
+      
+  datetime:
+    distance_in_words:
+      half_a_minute: 'fél perce'
+      less_than_x_seconds:
+        zero: 'kevesebb, mint egy másodperce'
+        one: 'egy másodperce'
+        other: '{{count}} másodperce'
+      x_seconds:
+        one: 'egy másodperce'
+        other: '{{count}} másodperce'
+      less_than_x_minutes:
+        zero: 'kevesebb, mint egy perce'
+        one: 'egy perce'
+        other: '{{count}} perce'
+      x_minutes:
+        one: 'egy perce'
+        other: '{{count}} perce'
+      about_x_hours:
+        one: 'kb. egy órája'
+        other: '{{count}} órája'
+      x_days:
+        one: 'egy napja'
+        other: '{{count}} napja'
+      about_x_months:
+        one: 'kb. egy hónapja'
+        other: '{{count}} hónapja'
+      x_months:
+        one: 'egy hónapja'
+        other: '{{count}} hónapja'
+      about_x_years:
+        one: 'kb. egy éve'
+        other: '{{count}} éve'
+      over_x_years:
+        one: 'több, mint egy éve'
+        other: '{{count}} éve'
+      
+  number:
+    format:
+      precision: 3
+      separator: ','
+      delimiter: ' '
+    currency:
+      format:
+        unit: 'Ft'
+        precision: 2
+        format: '%n %u'
+        
+  active_record:
+    error:
+      header_message: ["{{object_name}} nem menthető: 1 hiba", "{{object_name}} nem menthető: {{count}} hiba."]
+      message: "Kérjük nézze meg az alábbi mezőket:"
+    error_messages:
+      inclusion: "nincs benne a listában"
+      exclusion: "nem elérhető"
+      invalid: "nem érvényes"
+      confirmation: "nem egyezik az ellenőrző mezővel"
+      accepted: "nincs elfogadva"
+      empty: "nincs megadva"
+      blank: "nincs megadva"
+      too_long: "túl hosszú (legfeljebb {{count}} karakter hoszú lehet)"
+      too_short: "túl rövid (legalább {{count}} karakter hosszú kell legyen)"
+      wrong_length: "nem megfelelő hosszúságú ({{count}} karakter hosszú kell legyen)"
+      taken: "már foglalt"
+      not_a_number: "nem szám"
+      greater_than: "nagyobb kell legyen, mint {{count}}"
+      greater_than_or_equal_to: "legalább {{count}} kell legyen"
+      equal_to: "pontosan {{count}} kell legyen"
+      less_than: "kevesebb, mint {{count}} kell legyen"
+      less_than_or_equal_to: "legfeljebb {{count}} lehet"
+      odd: "páratlan kell legyen"
+      even: "páros kell legyen"
+      
+  txt:
+    main_title: "Rails lokalizálása"
+    app_name: "Demo alkalmazás"
+    sub_title: "hogyan lokalizáld az alkalmazásod a Rails új i18n képességeivel"
+    contents: "Tartalom"
+    menu:
+      introduction: "Bevezető"
+      about: "A demóról"
+      setup: "Előkészítés"
+      date_formats: "Dátumformátumok"
+      time_formats: "Időformátumok"
+    about:
+      title: "A demó alkalmazásról"
+      author: "Ezt a demó alkalmazást {{mail_1}} írta."
+      feedback: "Ha észrevételed van, nyugodtan írj nekem levelet. Látogatsd meg a {{blog_href}} blogot is, ahol rendszeresen írok Railsről és más dolgokról."
+      licence: "Ez a demó alkalmazás és minden tartalma a {{licence_href}} feltételei szerint használható fel. Ha olyan módon szeretnéd felhasználni, amit a licensz feltételei nem engednek meg, lépj kapcsolatba velem."
+    active_record:
+      too_lazy: "Itt nincsenek példák, mert túl lusta vagyok <strong>minden</strong> lehetséges hibaüzenetet bemutatni. ;-)"
+      easy_to_understand: "Azonban a dolog könnyen megérhető."
+    date_formats:
+      rails_standards_work: "A Rails sztenderd formátumok (Date::DATE_FORMATS) továbbra is működnek:"
+    date_helper:
+      date_time_title: "Dátum/Idő távolságok"
+      forms_title: "Formok"
+    index:
+      others: "mások"
+      introduction: "Mostanában {{sven_blog}} és {{sven_github}} sok munkát fektettek abba, hogy megkönnyítsék a Rails alkamazások nemzetközitését és lokalizálását a jövőben."
+      story_so_far: "Ez a demó alkalmazás megpróbálja bemutatni, hogy hogyan használhatod azokat a képességeket, amelyek eddig rendelkezésünkre állnak, hogy a Rails alkalmazásunk nagy részét lokalizálhassuk."
+    number_helper:
+      note_one: "Megjegyzés: a <code>number_to_phone</code> helper még nem lett lokalizálva és valószínűleg nem is lesz - legalábbis nem a core-ban. Nézd meg a  internationalization/localization pluginokat, például a {{globalize}} egy új verzióját, mivel azok valószínűleg támogatni fognak ehhez hasonló dolgokat is."
+      note_two: "Másik megjegyzés: a <code>number_to_currency</code>, <code>number_to_percentage</code> és <code>number_to_human_size</code> helperek belül mind a <code>number_with_precision</code> helpert használják, és a <code>number_with_precision</code> helper pedig a <code>number_with_delimiter</code> helpert használja belül."
+    setup:
+      freezing_edge_and_adding: "Edge fagyasztás és a localized_dates plugin telepítése"
+      you_need_to_be_on_edge: "Edge Railst kell használnod, hogy a Rails i18n lehetőségeit kiaknázd:"
+      date_time_formats: "A dátum- és időformázásokhoz szükség lesz még a következőre: {{localized_dates_link}}"
+      config_locale: "A lokál beállítása"
+      best_place: "Véleményem szerint a lokál konfigurációknak a legjobb hely a <code>config/locales</code>. A localized_dates plugin két lokált másol ebbe a könyvtárba: az en-US és a de-AT lokálokat. Ezeket bővítheted, módosíthatod, és újakat is létrehozhatsz."
+      locale: "Itt van a demó lokál, amit ehhez a demó alkalmazáshoz használtunk:"
+      defaults: "Be kell állítanod a alap lokált is a <code>environment.rb</code> fájlban vagy egy initializer-ben."
+      locale_structure_title: "Pár szó a lokálok struktúrájáról"
+      locale_structure_number: "Észrevehetted, hogy a lokál <code>:number</code> részében definiáltuk a <code>:format</code> és a <code>:currency</code> kulcsokat is. Általánosságban a lokálok hierarchikus felépítésűek - tehát az árak számok, a százalékok is számok, stb. <code>:currency</code> felülbírálhatja a <code>:format</code> beállításokat (a mi esetünkben a <code>:precision</code> 2-re van állítva 3 helyett) vagy bővítheti azokat (két új opciót adunk hozzá, <code>:unit</code> és <code>:format</code>)."
+      locale_structure_date_time: "Ugyanez igaz a dátumokra és időkre is: ha szüksége, a <code>:datetime</code> és <code>:time_with_zone</code> használható arra, hogy specifikusan befolyásolja a megfelelő típusú megjelenítést ahelyett, hogy a <code>:time</code> által meghatározottra hagyatkoznánk. Legtöbbször azonban ugyanazt a formázást akarjuk ezeknél is használni, mint a <code>:time</code> esetében."
+    time_formats:
+      rails_standards_work: "A Rails sztenderd formátumok (Time::DATE_FORMATS) továbbra is működnek:"
