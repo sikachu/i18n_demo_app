@@ -1,9 +1,10 @@
-"hu-HU":
+"hu":
   date:
     formats:
       default: "%Y.%m.%d"
       short: "%b. %e"
-      long: "%Y. %B %e."
+      long: "%Y. %B %e"
+      long_ordinal: "%Y. %B %e."
       only_day: "%e"
 
     day_names: [vasárnap, hétfő, kedd, szerda, csütörtök, péntek, szombat]
@@ -17,7 +18,8 @@
       default: "%a %b %d %H:%M:%S %Z %Y"
       time: "%H:%M"
       short: "%b. %d. %H:%M"
-      long: "%Y. %B %d. %H:%M"
+      long: "%Y. %B %d %H:%M"
+      long_ordinal: "%Y. %B %d. %H:%M"
       only_second: "%S"
       
       datetime:
@@ -143,3 +145,5 @@
       locale_structure_date_time: "Ugyanez igaz a dátumokra és időkre is: ha szüksége, a <code>:datetime</code> és <code>:time_with_zone</code> használható arra, hogy specifikusan befolyásolja a megfelelő típusú megjelenítést ahelyett, hogy a <code>:time</code> által meghatározottra hagyatkoznánk. Legtöbbször azonban ugyanazt a formázást akarjuk ezeknél is használni, mint a <code>:time</code> esetében."
     time_formats:
       rails_standards_work: "A Rails sztenderd formátumok (Time::DATE_FORMATS) továbbra is működnek:"
+    ipe:
+      click: "Kattints ide!"
