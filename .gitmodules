@@ -1,0 +1,3 @@
+[submodule "localized_dates"]
+        path = vendor/plugins/localized_dates
+        url = git://github.com/clemens/localized_dates.git
