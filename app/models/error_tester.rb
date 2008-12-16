@@ -15,4 +15,12 @@ class ErrorTester < ActiveRecord::Base
   validates_numericality_of :five, :allow_nil => true, :equal_to => 5
   validates_numericality_of :number, :allow_nil => true
   validates_inclusion_of :number, :allow_nil => true, :in => %w{1 42 100}
+
+  # crazy hack, just that we don't have to have all the columns in the db
+  # why do we have to do this at all?
+  %w{odd_number even_number five number}.each do |a|
+    define_method "#{a}_before_type_cast" do
+      send(a).to_s
+    end
+  end
 end

@@ -1,6 +1,61 @@
 <h2>ActiveRecordHelper</h2>
+<% if flash[:notice] %>
+<p style="border: 1px solid green; color: green;"><%= flash[:notice] %></p>
+<% end %>
 <div>
-  <p><%= I18n.t 'txt.active_record.too_lazy' %></p>
-  <p><%= I18n.t 'txt.active_record.easy_to_understand' %></p>
+  <p><%= I18n.t 'txt.active_record.this_too' %></p>
+  <div class="errors"><%= error_messages_for :error_tester %></div>
+  <% form_for :error_tester, :url => '', :method => :post do |f| %>
+    <p>
+      <%= f.label :login %>:<br/>
+      <%= f.text_field :login %>
+    </p>
+    <p>
+      <%= f.label :password %>:<br/>
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.label :password_confirmation %>:<br/>
+      <%= f.password_field :password_confirmation %>
+    </p>
+    <p>
+      <%= f.label :email %>:<br/>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :cuntry %>:<br/>
+      <%= f.text_field :country %>
+    </p>
+    <p>
+      <%= f.label :description %>:<br/>
+      <%= f.text_area :description, :rows => 2 %>
+    </p>
+    <p>
+      <%= f.label :word %>:<br/>
+      <%= f.text_field :word %>
+    </p>
+    <p>
+      <%= f.label :odd_number %>:<br/>
+      <%= f.text_field :odd_number %>
+    </p>
+    <p>
+      <%= f.label :even_number %>:<br/>
+      <%= f.text_field :even_number %>
+    </p>
+    <p>
+      <%= f.label :number %>:<br/>
+      <%= f.text_field :number %>
+    </p>
+    <p>
+      <%= f.label :five %>:<br/>
+      <%= f.text_field :five %>
+    </p>
+    <p>
+      <%= f.check_box :agreement %> <%= f.label :agreement %>
+    </p>
+    <p>
+      <%= f.submit :submit %>
+    </p>
+  <% end %>
   <p style="text-align:right;"><%= link_to '&raquo; NumberHelper', :action => 'number_helper' %></p>
 </div>

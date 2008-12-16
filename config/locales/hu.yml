@@ -134,8 +134,7 @@
       feedback: "Ha észrevételed van, nyugodtan írj nekem levelet. Látogatsd meg a {{blog_href}} blogot is, ahol rendszeresen írok Railsről és más dolgokról."
       licence: "Ez a demó alkalmazás és minden tartalma a {{licence_href}} feltételei szerint használható fel. Ha olyan módon szeretnéd felhasználni, amit a licensz feltételei nem engednek meg, lépj kapcsolatba velem."
     active_record:
-      too_lazy: "Itt nincsenek példák, mert túl lusta vagyok <strong>minden</strong> lehetséges hibaüzenetet bemutatni. ;-)"
-      easy_to_understand: "Azonban a dolog könnyen megérhető."
+      this_too: "Az ActiveRecord hibaüzenetek szintén lokalizálhatóak."
     date_formats:
       rails_standards_work: "A Rails sztenderd formátumok (Date::DATE_FORMATS) továbbra is működnek:"
     date_helper:
